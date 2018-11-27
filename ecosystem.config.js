@@ -34,7 +34,9 @@ module.exports = {
       script: basePath + '/mailing_service/server.js',
       watch: true,
       env: {
-        Q_URI: 'amqp://mikiigru:X7jeiUXGNspGd2d3yAax3kbVTJskhICI@mustang.rmq.cloudamqp.com/mikiigru'
+        Q_URI: 'amqp://mikiigru:X7jeiUXGNspGd2d3yAax3kbVTJskhICI@mustang.rmq.cloudamqp.com/mikiigru',
+        MJ_API_PUBLIC: 'e7c74352683841488c96b63a00d90a41',
+        MJ_API_SECRET: '36fc62700164d1e7dffab02373ae1daa'
       }
     }
   ]

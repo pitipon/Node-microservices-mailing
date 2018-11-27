@@ -1,8 +1,11 @@
-const { PORT, Q_URI } = process.env
+const { Q_URI, MJ_API_PUBLIC, MJ_API_SECRET } = process.env
 
 module.exports = {
-    port: PORT || 5000,
     q: {
         uri: Q_URI || 'nope'
+    },
+    mailjet: {
+        apiPublic: MJ_API_PUBLIC,
+        apiSecret: MJ_API_SECRET
     }
 }

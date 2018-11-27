@@ -1,6 +1,8 @@
 const amqp = require('amqplib/callback_api')
 const { q } = require('../config')
 
+const sendEmail = require('../handler/sendMail')
+
 const qName = 'test_q'
 
 module.exports = () => {
@@ -23,6 +25,7 @@ module.exports = () => {
                             // Change String to Object
                             const mail = JSON.parse(msg.content.toString())                    
                             console.log('I receive email: ', mail)
+                            sendEmail(mail)
         
                         } catch (e) {
                             console.log(e)
