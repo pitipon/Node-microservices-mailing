@@ -7,6 +7,6 @@ module.exports = {
         url: SERVICE_DB_URL || 'http://localhost'
     },
     q: {
-        uri: Q_URI || 'amqp://mikiigru:X7jeiUXGNspGd2d3yAax3kbVTJskhICI@mustang.rmq.cloudamqp.com/mikiigru'
+        uri: Q_URI || 'nope'
     }
 }

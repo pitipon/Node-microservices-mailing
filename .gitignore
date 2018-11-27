@@ -1,3 +1,4 @@
 packages/database_service/node_modules
 packages/gateway/node_modules
+packages/mailing_service/node_modules
 ecosystem.config.js
