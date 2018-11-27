@@ -11,7 +11,8 @@ module.exports = {
       watch: true,
       env: {
         PORT: 3000,
-        SERVICE_DB_PORT: 4000
+        SERVICE_DB_PORT: 4000,
+        Q_URI: 'amqp://mikiigru:X7jeiUXGNspGd2d3yAax3kbVTJskhICI@mustang.rmq.cloudamqp.com/mikiigru'
       }
     },
   
